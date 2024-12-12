@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
+}
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(213, 247, 247);
+}
+.todocontainer{
+min-height: 500px;
+width: 700px;
+border-radius: 10px;
+background-color: rgb(156, 175, 206);
+}
+.heading{
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.input{
+  height: 40px;
+  width: 65%;
+  margin-left: 9%;
+  border-radius: 5px;
+  padding: 0px 20px ;
+}
+.addbtn{
+  background-color: green;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.motivation{
+  margin: 20px;
+  margin-left: 9%;
+  display: inline-block;
+  font-size: 40px;
+}
+.data{
+  background-color: aliceblue;
+  min-height: 40px;
+  width: 65%;
+  margin-left: 9%;
+  border-radius: 5px;
+  padding: 0px 20px ;
+  display: flex;
+  align-items: center;
+}
+.items{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.removebtn{
+  background-color: green;
+  border-radius: 5px;
+  padding: 10px 25px;
+  height: 40px;
+}
+.removeall{
+  position: relative;
+  left: 41%;
+height: 45px;
+margin-bottom: 20px;
+  background-color: green;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+@media screen and (max-width: 430px) {
+  .container {
+    padding: 10px;
+  }
+  .data{
+    margin-left: 6px;
+  }
+  .heading {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  
+  .inputcontainer {
+    flex-direction: column;
+  }
+  
+  .input {
+    margin-left: 6px;
+    width: 96%;
+    font-size: 1rem;
+  }
+  
+  .addbtn {
+    width: 85px;
+    margin-left:40% ;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .items {
+    font-size: 0.9rem;
+    gap: 4px;
+  }
+  .motivation{
+    text-align: center;
+  }
+  .removebtn {
+    font-size: 0.8rem;
+    margin-right: 5px;
+  }
+  .removeall{
+    left: 32%;
+  }
+}
