@@ -2,7 +2,13 @@ import React, { useEffect, useState } from 'react'
 
 const Todolist = () => {
   const [input, setInput] = useState('')
-  const [itemlist, setItemlist] = useState([])
+  const key ="items"
+  const [itemlist, setItemlist] = useState(()=>{
+   return JSON.parse( localStorage.getItem(key))
+  ||[]})
+  useEffect(()=>{
+    localStorage.setItem(key,JSON.stringify(itemlist))
+  },[itemlist])
   function adddata() {
     // setItemlist([...itemlist,input]);
     if(input.trim()){
